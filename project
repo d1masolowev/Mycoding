@@ -12,3 +12,9 @@ import phik
 pd.options.display.max_columns = None # полностью отображаем столбцы
 warnings.filterwarnings("ignore")
 sns.set_style("whitegrid")
+df = pd.read_csv('датасет_для_ДЗ.csv')      # Загружаю датасет
+df.info()
+df.head(10)
+df.describe().T
+df.describe(include='object').T
+df.duplicated().sum()                                # Проверяю на дубликаты 
