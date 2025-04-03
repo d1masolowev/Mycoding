@@ -18,3 +18,8 @@ df.head(10)
 df.describe().T
 df.describe(include='object').T
 df.duplicated().sum()                                # Проверяю на дубликаты 
+df1 = df.drop_duplicates()                           # Удаляю дубликаты
+df1.reset_index(drop=True, inplace=True)
+df1.shape
+df1.isnull().sum()                                   # Проверяю на пропуски
+df1.describe(include='all').T
