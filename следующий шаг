@@ -1,0 +1,4 @@
+df = pd.read_csv('датасет_для_ДЗ.csv')      # Загружаю датасет
+df.info()
+df.head(10)
+df.describe().T
